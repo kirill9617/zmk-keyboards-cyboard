@@ -69,6 +69,20 @@
     };
 };
 
+&i2c1{
+    status = "disabled";
+    glidepoint0: glidepoint@2a {
+        compatible = "cirque,pinnacle";
+        reg = <0x2a>;
+        status = "disabled";
+        //dr-gpios = <&pro_micro 1 (GPIO_ACTIVE_HIGH)>;
+
+        sensitivity = "1x";
+        sleep;
+        //no-taps;
+    };
+};
+
 &spi1 {
     compatible = "nordic,nrf-spim";
     pinctrl-0 = <&spi1_default>;
