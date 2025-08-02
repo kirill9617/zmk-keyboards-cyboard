@@ -30,12 +30,6 @@
 
 };
 
-// Overrides for the input-split child node
-&trackball_peripheral_split {
-    device = <&trackball_peripheral>;
-};
-
-
 &i2c1 {
     status = "okay";
     glidepoint0: glidepoint@2a {
