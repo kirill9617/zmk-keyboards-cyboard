@@ -45,3 +45,26 @@
 &trackball_peripheral_split {
     device = <&trackball_peripheral>;
 };
+
+
+&i2c1 {
+    status = "okay";
+    glidepoint0: glidepoint@2a {
+        status = "okay";
+    };
+};
+
+&i2c1_default {
+    group1 {
+      bias-pull-up;
+    };
+};
+
+
+// Overrides for the input-split child node
+&glidepoint_split {
+    device = <&glidepoint0>;
+
+    // Optional
+    input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+};
