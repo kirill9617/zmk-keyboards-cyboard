@@ -38,3 +38,8 @@
     status = "okay";
     device = <&trackball_central>;
 };
+
+
+&glidepoint_listener {
+    status = "okay";
+};
