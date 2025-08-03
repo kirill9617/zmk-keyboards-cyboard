@@ -35,25 +35,25 @@ config SPI
 #     default 8
 
 endif
-#
-# config ZMK_RGB_UNDERGLOW
-#     default y
-#     imply WS2812_STRIP
-#
-# config ZMK_RGB_UNDERGLOW_ON_START
-#     default n
-#
-# config ZMK_RGB_UNDERGLOW_BRT_MIN
-#     default 5
-#
-# config ZMK_RGB_UNDERGLOW_BRT_MAX
-#     default 50
-#
-# config ZMK_RGB_UNDERGLOW_BRT_START
-#     default 25
-#
-# config ZMK_RGB_UNDERGLOW_BRT_STEP
-#     default 5
-#
-# config ZMK_RGB_UNDERGLOW_HUE_START
-#     default 40
+
+ config ZMK_RGB_UNDERGLOW
+     default y
+     imply WS2812_STRIP
+
+ config ZMK_RGB_UNDERGLOW_ON_START
+     default n
+
+ config ZMK_RGB_UNDERGLOW_BRT_MIN
+     default 5
+
+ config ZMK_RGB_UNDERGLOW_BRT_MAX
+     default 50
+
+ config ZMK_RGB_UNDERGLOW_BRT_START
+     default 25
+
+ config ZMK_RGB_UNDERGLOW_BRT_STEP
+     default 5
+
+ config ZMK_RGB_UNDERGLOW_HUE_START
+     default 40

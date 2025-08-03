@@ -13,8 +13,6 @@
     compatible = "assimilator-bt";
 
     chosen {
-	zephyr,console = &usb_logging_uart;
-        zephyr,shell-uart = &usb_shell_uart;
         zephyr,code-partition = &code_partition;
         zephyr,sram = &sram0;
         zephyr,flash = &flash0;
@@ -91,13 +89,6 @@
 
 zephyr_udc0: &usbd {
     status = "okay";
-    usb_shell_uart: usb_shell_uart {
-        compatible = "zephyr,cdc-acm-uart";
-    };
-    usb_logging_uart: usb_logging_uart {
-        compatible = "zephyr,cdc-acm-uart";
-    };
-
 };
 
 
